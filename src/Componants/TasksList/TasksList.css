@@ -25,3 +25,10 @@
     color: #46d309;
     font-weight: 500;
 } 
+
+.add-new-button {
+    width: 100%;
+    font-size: 0.7em;
+    margin-top: 1em;
+    border: none;
+}
