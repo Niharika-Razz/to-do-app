@@ -7,13 +7,13 @@ const StatusTabs = () => {
   return (
     <>
       <Row>
-        <Col md={3}>
+        <Col md={3} className="right-boarder">
           <TasksList name={STATUS.TO_DO} />
         </Col>
-        <Col md={3}>
+        <Col md={3} className="right-boarder">
           <TasksList name={STATUS.IN_PROGRSS} />
         </Col>
-        <Col md={3}>
+        <Col md={3} className="right-boarder">
           <TasksList name={STATUS.IN_REVIEW} />
         </Col>
         <Col md={3}>
