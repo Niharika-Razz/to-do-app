@@ -2,6 +2,7 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./TaskBoard.css";
 import ProjectsList from "../../Componants/ProjectsList/ProjectsList";
+import StatusTabs from "../../Componants/StatusTabs/StatusTabs";
 
 const TaskBoard = () => {
   return (
@@ -20,7 +21,7 @@ const TaskBoard = () => {
           <Button variant="link">+ Add New Project</Button>
         </Col>
         <Col md={10} className="border-box">
-          4
+          <StatusTabs />
         </Col>
       </Row>
     </Container>
