@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import "./TaskBoard.css";
+import ProjectsList from "../../Componants/ProjectsList/ProjectsList";
 
 const TaskBoard = () => {
   return (
@@ -15,7 +16,7 @@ const TaskBoard = () => {
       </Row>
       <Row className="border-box">
         <Col md={2} className="border-box" >
-          3
+        <ProjectsList />
         </Col>
         <Col  md={10} className="border-box" >
           4
