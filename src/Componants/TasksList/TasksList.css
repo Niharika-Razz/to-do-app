@@ -1,0 +1,27 @@
+.small-icon {
+    font-size: 0.6em; 
+  }
+
+.to-do-badge {
+    background-color: #c9d7f5 !important;
+    color: #032975;
+    font-weight: 500;
+} 
+
+.in-progress-badge {
+    background-color: rgb(240, 169, 217) !important;
+    color: #bd057a;
+    font-weight: 500;
+} 
+
+.in-review-badge {
+    background-color: rgb(179, 227, 240) !important;
+    color: #07a9e9;
+    font-weight: 500;
+} 
+
+.completed-badge {
+    background-color: rgb(215, 245, 189) !important;
+    color: #46d309;
+    font-weight: 500;
+} 

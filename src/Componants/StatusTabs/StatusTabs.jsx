@@ -1,21 +1,24 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-
-const STATUS = {
-  TO_DO: "To Do",
-  IN_PROGRSS: "In Progress",
-  IN_REVIEW: "In-Review",
-  COMPLETED: "Completed",
-};
+import TasksList from "../TasksList/TasksList";
+import { STATUS } from "../../Constants";
 
 const StatusTabs = () => {
   return (
     <>
       <Row>
-        <Col md={3}> {STATUS.TO_DO}</Col>
-        <Col md={3}> {STATUS.IN_PROGRSS}</Col>
-        <Col md={3}> {STATUS.IN_REVIEW}</Col>
-        <Col md={3}> {STATUS.COMPLETED}</Col>
+        <Col md={3}>
+          <TasksList name={STATUS.TO_DO} />
+        </Col>
+        <Col md={3}>
+          <TasksList name={STATUS.IN_PROGRSS} />
+        </Col>
+        <Col md={3}>
+          <TasksList name={STATUS.IN_REVIEW} />
+        </Col>
+        <Col md={3}>
+          <TasksList name={STATUS.COMPLETED} />
+        </Col>
       </Row>
     </>
   );
