@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import "./TaskBoard.css";
 import ProjectsList from "../../Componants/ProjectsList/ProjectsList";
 
@@ -15,10 +15,11 @@ const TaskBoard = () => {
         </Col>
       </Row>
       <Row className="border-box">
-        <Col md={2} className="border-box" >
-        <ProjectsList />
+        <Col md={2} className="border-box">
+          <ProjectsList />
+          <Button variant="link">+ Add New Project</Button>
         </Col>
-        <Col  md={10} className="border-box" >
+        <Col md={10} className="border-box">
           4
         </Col>
       </Row>
