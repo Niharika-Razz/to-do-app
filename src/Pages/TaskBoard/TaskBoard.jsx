@@ -16,11 +16,11 @@ const TaskBoard = () => {
         </Col>
       </Row>
       <Row className="border-box">
-        <Col md={2} className="border-box">
+        <Col md={2} className="border-box" style={{ height: "30em" }}>
           <ProjectsList />
           <Button variant="link">+ Add New Project</Button>
         </Col>
-        <Col md={10} className="border-box">
+        <Col md={10} className="border-box" style={{ height: "30em" }}>
           <StatusTabs />
         </Col>
       </Row>
