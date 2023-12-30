@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import TasksList from "../TasksList/TasksList";
-import { STATUS } from "../../Constants";
+import { TASK_STATUS } from "../../Constants";
 import CreateEditTaskModal from "../CreateEditTaskModal/CreateEditTaskModal";
 
 const StatusTabs = () => {
@@ -18,16 +18,16 @@ const StatusTabs = () => {
       />
       <Row>
         <Col md={3} className="right-boarder">
-          <TasksList name={STATUS.TO_DO} showTaskModal={handleShow} />
+          <TasksList name={TASK_STATUS.TO_DO} showTaskModal={handleShow} />
         </Col>
         <Col md={3} className="right-boarder">
-          <TasksList name={STATUS.IN_PROGRSS} showTaskModal={handleShow} />
+          <TasksList name={TASK_STATUS.IN_PROGRSS} showTaskModal={handleShow} />
         </Col>
         <Col md={3} className="right-boarder">
-          <TasksList name={STATUS.IN_REVIEW} showTaskModal={handleShow} />
+          <TasksList name={TASK_STATUS.IN_REVIEW} showTaskModal={handleShow} />
         </Col>
         <Col md={3}>
-          <TasksList name={STATUS.COMPLETED} showTaskModal={handleShow} />
+          <TasksList name={TASK_STATUS.COMPLETED} showTaskModal={handleShow} />
         </Col>
       </Row>
     </>

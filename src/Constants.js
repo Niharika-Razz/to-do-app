@@ -4,16 +4,16 @@ export const PROJECTS = [
   "HPCL Project 1",
 ];
 
-export const STATUS = {
+export const TASK_STATUS = {
   TO_DO: "To Do",
   IN_PROGRSS: "In Progress",
   IN_REVIEW: "In-Review",
   COMPLETED: "Completed",
 };
 
-export const STATUS_STYLES = {
-  [STATUS.TO_DO]: "to-do-badge",
-  [STATUS.IN_PROGRSS]: "in-progress-badge",
-  [STATUS.IN_REVIEW]: "in-review-badge",
-  [STATUS.COMPLETED]: "completed-badge",
+export const TASK_STATUS_STYLES = {
+  [TASK_STATUS.TO_DO]: "to-do-badge",
+  [TASK_STATUS.IN_PROGRSS]: "in-progress-badge",
+  [TASK_STATUS.IN_REVIEW]: "in-review-badge",
+  [TASK_STATUS.COMPLETED]: "completed-badge",
 };

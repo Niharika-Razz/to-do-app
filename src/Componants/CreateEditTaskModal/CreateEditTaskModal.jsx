@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Modal } from "react-bootstrap";
+import TaskForm from "../TaskForm/TaskForm";
 
 const CreateEditTaskModal = ({ showTaskModal, closeModal }) => {
   return (
@@ -7,13 +8,15 @@ const CreateEditTaskModal = ({ showTaskModal, closeModal }) => {
       <Modal.Header closeButton>
         <Modal.Title style={{ fontSize: "1.1em" }}>Add new task</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+      <Modal.Body>
+        <TaskForm />
+      </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={closeModal} size="sm">
           Close
         </Button>
         <Button variant="primary" onClick={() => {}} size="sm">
-          Save Changes
+          Save
         </Button>
       </Modal.Footer>
     </Modal>

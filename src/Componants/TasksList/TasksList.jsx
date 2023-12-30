@@ -1,10 +1,10 @@
 import React from "react";
 import { Badge, Button } from "react-bootstrap";
 import "./TasksList.css";
-import { STATUS_STYLES } from "../../Constants";
+import { TASK_STATUS_STYLES } from "../../Constants";
 
 const TasksList = ({ name, showTaskModal }) => {
-  const className = STATUS_STYLES[name];
+  const className = TASK_STATUS_STYLES[name];
   return (
     <>
       <Badge pill className={className}>
