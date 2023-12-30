@@ -6,3 +6,11 @@
     margin: 0.5em;
     font-weight: 600;
 }
+
+.add-new-project-button {
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: 550;
+    margin-top: 0.5em;
+    border: none;
+}

@@ -18,7 +18,9 @@ const TaskBoard = () => {
       <Row className="border-box">
         <Col md={2} className="border-box" style={{ height: "30em" }}>
           <ProjectsList />
-          <Button variant="link">+ Add New Project</Button>
+          <Button variant="link" className="add-new-project-button">
+            + Add New Project
+          </Button>
         </Col>
         <Col md={10} className="border-box" style={{ height: "30em" }}>
           <StatusTabs />
