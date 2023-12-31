@@ -17,3 +17,31 @@ export const TASK_STATUS_STYLES = {
   [TASK_STATUS.IN_REVIEW]: "in-review-badge",
   [TASK_STATUS.COMPLETED]: "completed-badge",
 };
+
+export const SAMPLE_TASKS = {
+  [TASK_STATUS.TO_DO]: [
+    {
+      id: 1,
+      name: "sample to do task 1",
+      startDate: "07-04-2023",
+      deadline: "12-21-2023",
+      status: [TASK_STATUS.TO_DO],
+    },
+    {
+      id: 2,
+      name: "sample to do task 2",
+      startDate: "07-05-2023",
+      deadline: "12-01-2023",
+      status: [TASK_STATUS.TO_DO],
+    },
+  ],
+  [TASK_STATUS.IN_PROGRSS]: [
+    {
+      id: 2,
+      name: "sample in progress task 1",
+      startDate: "07-04-2023",
+      deadline: "12-21-2023",
+      status: [TASK_STATUS.IN_PROGRSS],
+    },
+  ],
+};
