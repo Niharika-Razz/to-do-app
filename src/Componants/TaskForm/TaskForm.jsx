@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Form, Col, Row, Container, FormGroup } from "react-bootstrap";
+import React from "react";
+import { Form, Col, Row, Container, FormGroup, Button } from "react-bootstrap";
 import { TASK_STATUS } from "../../Constants";
 
-const TaskForm = () => {
+const TaskForm = ({ onCancel, onSubmit }) => {
   return (
     <Container>
       <Form>
@@ -33,6 +33,20 @@ const TaskForm = () => {
             ))}
           </Form.Select>
         </Form.Group>
+
+        <div style={{ textAlign: "right" }}>
+          <Button variant="secondary" onClick={onCancel} size="sm">
+            Cancel
+          </Button>
+          <Button
+            variant="primary"
+            onClick={onSubmit}
+            size="sm"
+            style={{ marginLeft: "1em" }}
+          >
+            Save
+          </Button>
+        </div>
       </Form>
     </Container>
   );
