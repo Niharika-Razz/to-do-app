@@ -1,34 +1,33 @@
 import React, { useState } from "react";
-import { Form, Col, Row, Container } from "react-bootstrap";
+import { Form, Col, Row, Container, FormGroup } from "react-bootstrap";
 import { TASK_STATUS } from "../../Constants";
 
 const TaskForm = () => {
   return (
     <Container>
       <Form>
-        <Form.Group className="mb-3">
+        <Form.Group className="mb-3" controlId="taskName">
           <Form.Label>Name of the Task</Form.Label>
-          <Form.Control type="text" name="taskName" placeholder="text" />
+          <Form.Control size="sm" type="text" placeholder="text" />
         </Form.Group>
-
-        <Form.Group className="mb-3">
-          <Row>
-            <Col>
+        <Row>
+          <Col>
+            <Form.Group className="mb-3" controlId="startDate">
               <Form.Label>Start Date</Form.Label>
-              <Form.Control type="date" name="startDate" />
-            </Col>
-            <Col>
+              <Form.Control size="sm" type="date" />
+            </Form.Group>
+          </Col>
+          <Col>
+            <FormGroup className="mb-3" controlId="deadLine">
               <Form.Label>Deadline</Form.Label>
-              <Form.Control type="date" name="deadLine" />
-            </Col>
-          </Row>
-        </Form.Group>
+              <Form.Control size="sm" type="date" />
+            </FormGroup>
+          </Col>
+        </Row>
 
-        <Form.Group className="mb-3">
-          <Form.Label column sm={2}>
-            Status
-          </Form.Label>
-          <Form.Select name="status">
+        <Form.Group className="mb-3" controlId="status">
+          <Form.Label>Status</Form.Label>
+          <Form.Select size="sm">
             {Object.values(TASK_STATUS).map((status) => (
               <option value={status}>{status}</option>
             ))}
